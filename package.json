@@ -5,7 +5,7 @@
   "main": "dist/FunkoPopApp/app.js",
   "type": "module",
   "scripts": {
-    "server": "tsc-watch --onSuccess \"node dist/modificacion/server.js\"",
+    "server": "node dist/modificacion/server.js",
     "doc": "typedoc",
     "test": "mocha",
     "coverage": "c8 npm test && c8 report --reporter=lcov"

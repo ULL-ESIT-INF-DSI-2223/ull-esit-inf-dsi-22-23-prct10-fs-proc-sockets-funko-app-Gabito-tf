@@ -20,11 +20,6 @@ Desarrollo de Sistemas Informáticos
   ### Ejercicio 1<a name="id1"></a>
   Nos encontramos con un programa que utiliza el módulo 'fs' de Node.js para monitorear cambios en un archivo específico. Al ejecutar el programa, teneoms que poner un nombre de archivo como argumento, este verifica si el archivo existe, en caso afirmativo, comienza a monitorearlo. Cada vez que el archivo se modifica, el programa muestra un mensaje en la consola informando que el archivo ha sido modificado de alguna manera.
 
-  Para ejecutar el programa, debemos poner el siguiente comando en la consola:
-  ```typescript
-    node dist/ejercicio1.js <nombre_archivo>
-    ```
-
     Para resumir el comportamiento de mismo lo voy a reducir a una tabla:
 
     | Paso | Pila de llamadas                     | Registro de eventos API| Cola de manejadores | Mensajes consola                                    |

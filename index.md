@@ -24,7 +24,7 @@ Desarrollo de Sistemas Informáticos
   ```bash
     node dist/ejercicio1.js <nombre_archivo>
     ```
-    Para resumir el comportamiento de mismo lo voy a reducir a una tabla:
+Para resumir el comportamiento de mismo lo voy a reducir a una tabla:
 
 | Paso | Pila de llamadas                     | Registro de eventos API| Cola de manejadores | Mensajes consola                                    |
 |------|--------------------------------------|------------------------|---------------------|-----------------------------------------------------|

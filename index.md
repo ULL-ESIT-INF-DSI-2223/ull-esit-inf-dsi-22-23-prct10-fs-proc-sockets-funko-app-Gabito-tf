@@ -24,18 +24,18 @@ Desarrollo de Sistemas Informáticos
   ```bash
     node dist/ejercicio1.js <nombre_archivo>
     ```
-Para resumir el comportamiento de mismo lo voy a reducir a una tabla:
+    Para resumir el comportamiento de mismo lo voy a reducir a una tabla:
 
-| Paso | Pila de llamadas                     | Registro de eventos API| Cola de manejadores | Mensajes consola                                    |
-|------|--------------------------------------|------------------------|---------------------|-----------------------------------------------------|
-| 1    | Vacía                                |                        |                     |                                                     |
-| 2    | Función de devolución de llamada     |                        |                     |                                                     |
-| 3    | Vacía                                |                        |                     | "Starting to watch file helloworld.txt"             |
-| 4    |                                      | Evento 'change'        |                     | "File helloworld.txt is no longer watched"          |
-| 5    |                                      |                        | Manejador 'change'  |                                                     |
-| 6    | Manejador de eventos 'change'        |                        |                     | "File helloworld.txt has been modified somehow" (1) |
-| 7    | Vacía                                |                        |                     |                                                     |
-| 8    |                                      |                        | Manejador 'change'  |                                                     |
-| 9    | Manejador de eventos 'change'        |                        |                     | "File helloworld.txt has been modified somehow" (2) |
-| 10   | Vacía                                |                        |                     |                                                     |
+    | Paso | Pila de llamadas                     | Registro de eventos API| Cola de manejadores | Mensajes consola                                    |
+    |------|--------------------------------------|------------------------|---------------------|-----------------------------------------------------|
+    | 1    | Vacía                                |                        |                     |                                                     |
+    | 2    | Función de devolución de llamada     |                        |                     |                                                     |
+    | 3    | Vacía                                |                        |                     | "Starting to watch file helloworld.txt"             |
+    | 4    |                                      | Evento 'change'        |                     | "File helloworld.txt is no longer watched"          |
+    | 5    |                                      |                        | Manejador 'change'  |                                                     |
+    | 6    | Manejador de eventos 'change'        |                        |                     | "File helloworld.txt has been modified somehow" (1) |
+    | 7    | Vacía                                |                        |                     |                                                     |
+    | 8    |                                      |                        | Manejador 'change'  |                                                     |
+    | 9    | Manejador de eventos 'change'        |                        |                     | "File helloworld.txt has been modified somehow" (2) |
+    | 10   | Vacía                                |                        |                     |                                                     |
 

@@ -1,4 +1,4 @@
-import net from "net";
+import * as net from "net";
 
 const client = net.createConnection({ port: 60500 }, () => {
   console.log("Conectado al servidor.");

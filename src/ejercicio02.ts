@@ -1,5 +1,5 @@
-import fs from "fs";
-import yargs from "yargs/yargs";
+import * as fs from 'fs';
+import yargs from 'yargs';
 import { hideBin } from "yargs/helpers";
 import { spawn } from "child_process";
 

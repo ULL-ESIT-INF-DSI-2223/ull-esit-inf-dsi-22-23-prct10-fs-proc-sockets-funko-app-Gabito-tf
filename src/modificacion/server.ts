@@ -1,4 +1,4 @@
-import net from "net";
+import * as net from "net";
 import { exec } from "child_process";
 
 const server = net.createServer((connection) => {
